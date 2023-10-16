@@ -3,29 +3,31 @@
 #include <stdio.h>
 
 /**
- * main - Prints if number is greater than 5, zero or is less than 6 and not 0
+ * main - Prints a text according number
  *
  * Return: Always (Success)
  */
 int main(void)
 {
-	int n, Last;
+	int n, lastd;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-    Last = n % 10
-	if (Last > 5)
+	lastd = n % 10;
+
+	if (lastd > 5)
 	{
-		printf("is greater than 5\n", n, Last);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 	}
-	else if (Last == 0)
+	else if (lastd == 0)
 	{
-		printf("is zero\n", n, Last);
+		printf("Last digit of %d is %d and is 0\n", n, lastd);
 	}
-	else if (Last < 6 && Last != 0)
+	else if (lastd < 6 && lastd != 0)
 	{
-		printf("is less than 6 and not 0\n", n, Last);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
 	}
 
-	return (0);
+	return (0);
 }
+
