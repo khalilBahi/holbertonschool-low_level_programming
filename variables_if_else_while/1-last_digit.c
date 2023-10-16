@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <stdio.math>
 /**
  * main -  print the last digit of the number stored in the variable n
  *
  * Return: Always (Success)
  */
 
-int main(void)
+int main (void)
 {
 	int n, lastd;
 
