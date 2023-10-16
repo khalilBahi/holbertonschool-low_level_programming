@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-v=n%10
+    v = n % 10
 	if (v > 5)
 	{
 		printf("%d is greater than 5\n", v);
@@ -22,7 +22,7 @@ v=n%10
 	{
 		printf("%d is zero\n", v);
 	}
-	else 
+	else if (v < 6 && v != 0)
 	{
 		printf("%d is less than 6 and not 0\n", v);
 	}
