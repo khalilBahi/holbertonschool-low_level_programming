@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet in lowercase
- *
- * Return: Always (Success)
- */
+  *main - prints numbers of base 16 in lowercase
+  *Return: 0
+*/
 int main(void)
 {
-	char n;
+	int n;
 
-	for (n = '0'; n <= '15'; n++)
+	for (n = 0; n <= 15; n++)
 	{
 		printf("%x", n);
 	}
-
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
