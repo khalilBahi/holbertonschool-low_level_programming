@@ -3,6 +3,7 @@
 /**
  * _islower -   prints the alphabet, in lowercase
  * Return: Always (Success)
+ * @c: integer
  */
 int _islower(int c)
 {
