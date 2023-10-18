@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,5 +13,5 @@ char ch;
 	{
 		_putchar(ch);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
