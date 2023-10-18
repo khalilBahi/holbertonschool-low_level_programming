@@ -6,7 +6,7 @@
  */
 
 void print_alphabet(void);
-char ach
+char ch
 {
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
