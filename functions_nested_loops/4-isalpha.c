@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _islower -   prints the alphabet, in lowercase
+ * _isalpha -   function that checks for alphabetic character.
  * Return: Always (Success)
  * @c: integer
  */
