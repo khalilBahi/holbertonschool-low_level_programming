@@ -6,7 +6,7 @@
  * @a : integer
  * @b : integer
  */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	int s = 0;
 
