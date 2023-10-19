@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet_x10 -   prints the alphabet, in lowercase
+ * _isupper -   function that checks for uppercase character.
  * Return: Always (Success)
  */
 int _isupper(int c)
