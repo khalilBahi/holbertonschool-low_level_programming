@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * main - Fizz-Buzz test
+ *
  * Return: Always  (Success)
  */
 
@@ -28,6 +29,8 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+
+	printf("\n");
+
+	return (0);
 }
-printf("\n");
-return (0);
