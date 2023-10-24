@@ -13,7 +13,7 @@ void puts2(char *str)
 	while (str[i] != '\0')
 	{
 		printf("%c", str[i]);
-		i = i + 1;
+		i = i + 2;
 	}
 	printf("\n");
 }
