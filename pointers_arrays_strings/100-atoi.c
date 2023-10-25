@@ -8,24 +8,27 @@
  */
 int _atoi(char *s)
 {
-	unsigned int num = 0;
+	int num = 0;
 	int sign = 1;
+	int k = 0;
 
 	while (*s)
 	{
-		if (*s == '-')
+		if (*s == '-' && !numStarted)
 		{
-			sign = sign - 1;
+			sign = -1;
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
-			num = (num * 10) + (*s - '0');
+			num = num * 10 + (*s - '0');
+			numStarted = 1;
 		}
-		else if (num > 0)
+		else if (k)
 		{
 			break;
 		}
 		s++;
 	}
-	return (num * sign);
+
+	return num * sign;
 }
