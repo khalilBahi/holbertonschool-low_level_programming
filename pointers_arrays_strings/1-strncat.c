@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strcat - function that copies the string pointed
+ * _strncat - function that copies the string pointed
  * @dest : pointeur
  * @src : pointeur
  * @n : nbr of byte
