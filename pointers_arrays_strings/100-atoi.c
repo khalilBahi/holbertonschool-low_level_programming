@@ -11,6 +11,8 @@ int _atoi(char *s)
 	int num = 0;
 	int sign = 1;
 	int k = 0;
+	int pn;
+	int d;
 
 	while (*s)
 	{
@@ -20,7 +22,22 @@ int _atoi(char *s)
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
-			num = num * 10 + (*s - '0');
+			d = (*s - '0');
+			pn = num;
+			num = num * 10 + d;
+
+			if (num < pn)
+			{
+				if (sign == 1)
+				{
+					return (-1);
+				}
+				else
+				{
+					return (0);
+				}
+			}
+
 			k = 1;
 		}
 		else if (k)
