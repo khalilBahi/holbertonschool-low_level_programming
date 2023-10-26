@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _memset - function that encodes a string into 1337
+ * _memset - function that copies memory area
  * Return: s
  * @s : pointeur
  * @b : pointeur
