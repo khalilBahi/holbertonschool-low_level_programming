@@ -18,11 +18,13 @@ char *cap_string(char *str)
 			if (str[i] >= 'a' && str[i] <= 'z')
 				str[i] = (int)str[i] - 32;
 		}
-		else if (str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '.' || str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}')
+		else if (str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '.' || str[i - 1] == ',')
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
 				str[i] = (int)str[i] - 32;
 		}
+		else if (str[i] >= '0' && str[i] <= '9')
+			return (p);
 	}
 	return (p);
 }
