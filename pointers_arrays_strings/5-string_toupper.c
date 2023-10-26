@@ -4,7 +4,7 @@
 /**
  * string_toupper - function that reverses a string.
  * Return: upp
- * @upp : pointeur
+ * @str : pointeur
  */
 char *string_toupper(char *str)
 {
