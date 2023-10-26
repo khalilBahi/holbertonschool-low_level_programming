@@ -9,6 +9,7 @@
 char *cap_string(char *str)
 {
 	int i;
+	char *ptr=str
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -23,5 +24,5 @@ char *cap_string(char *str)
 				str[i] = (int)str[i] - 32;
 		}
 	}
-	return (str);
+	return (ptr);
 }
