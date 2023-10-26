@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * leet - function that encodes a string into 1337
- * Return:
+ * Return: str
  * @str : pointeur
  */
 char *leet(char *str)
