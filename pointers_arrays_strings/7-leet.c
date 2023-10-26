@@ -3,11 +3,12 @@
 #include <string.h>
 /**
  * leet - function that encodes a string into 1337
- * Return: str
+ * Return: 
  * @str : pointeur
  */
 char *leet(char *str)
 {
+	char *p = str;
 	char l[] = { 'a', 'e', 'o', 't', 'l' };
 	char n[] = { 4, 3, 0, 7, 1 };
 	int i = 0;
@@ -21,5 +22,5 @@ char *leet(char *str)
 		}
 		str++;
 	}
-	return (str);
+	return (p);
 }
