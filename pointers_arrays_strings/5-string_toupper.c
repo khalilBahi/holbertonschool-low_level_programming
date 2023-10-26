@@ -3,17 +3,19 @@
 #include <string.h>
 /**
  * string_toupper - function that reverses a string.
- * Return: str
+ * Return: upp
  * @upp : pointeur
  */
 char *string_toupper(char *upp)
 {
 	int i;
 
-	for (i = 0; *upp != '\0'; i++)
+	for (i = 0; upp != '\0'; i++)
 	{
-		if (upp[i] >= 'a' && upp[i] <= 'z')
-			upp[i] -= 32;
+		while (upp[i] >= 'a' && upp[i] <= 'z')
+		{
+			upp[i] = (int)upp[i] - 32;
+		}
 	}
 	return (upp);
 }
