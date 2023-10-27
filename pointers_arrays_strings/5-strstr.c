@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strpbrk - function that copies memory area
- * @accept : pointeur
- * @s : pointeur
+ * _strstr - function that locates a substring
+ * @haystack : pointeur
+ * @needle : pointeur
  * Return: to NULL
  */
 char *_strstr(char *haystack, char *needle)
