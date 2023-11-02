@@ -12,7 +12,8 @@ int _sqrt_recursion(int n)
 /**
  *verief - function that verief the square of x
  *@n : nbr
- *Return:0,1,
+ *@x: nbr
+ *Return:x,s,-1
  */
 int verief(int n, int x)
 {
