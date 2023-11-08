@@ -2,7 +2,7 @@
 /**
  * malloc_checked - function that allocates memory
  * @b: size of allocated memory
- * Return: ptr
+ * Return: n
  */
 void *malloc_checked(unsigned int b)
 {
