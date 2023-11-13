@@ -4,8 +4,9 @@
  * struct dog -type struct
  * @name: name of dog
  * @age: age of dog
- * @owner: owner of the dog 
+ * @owner: owner of the dog
  */
+
 typedef struct dog
 {
 	char *name;
