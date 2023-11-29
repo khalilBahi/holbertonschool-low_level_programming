@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - function that prints all the elements of a list_t list
+ * *add_node - function that prints all the elements of a list_t list
  * @head:pointer to first node
  * @str:pointeur
  * Return: i element count
@@ -11,7 +11,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (n == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	n->str = strdup(str);
@@ -21,4 +21,5 @@ list_t *add_node(list_t **head, const char *str)
 	*head = n;
 
 	return (n);
+	free(n);
 }
