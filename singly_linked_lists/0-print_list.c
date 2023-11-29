@@ -1,27 +1,27 @@
 #include "lists.h"
 /**
  * print_list - function that prints all the elements of a list_t list
- * @h:is the number of integers
- * Return: count
+ * @h:pointer to first node
+ * Return: i element count
  */
 size_t print_list(const list_t *h)
 {
-    unsigned int i=0;
+	unsigned int i = 0;
 
-    while (h != NULL)
-    {
-        if (h->str == NULL)
-        {
-            printf("[0] (nil)\n");
-        }
-        else
-        {
-            printf("[%d] %s\n", h->len, h->str);
-        }
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+			printf("[%d] %s\n", h->len, h->str);
+		}
 
-        h = h->next;
-        i++;
-    }
+		h = h->next;
+		i++;
+	}
 
-    return (i);
+	return (i);
 }
