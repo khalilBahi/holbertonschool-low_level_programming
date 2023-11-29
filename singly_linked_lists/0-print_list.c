@@ -6,21 +6,20 @@
  */
 size_t print_list(const list_t *h)
 {
-    size_t i;
-    const list_t *p = h;
+    unsigned int i=0;
 
-    while (p != NULL)
+    while (h != NULL)
     {
-        if (p->str == NULL)
+        if (h->str == NULL)
         {
             printf("[0] (nil)\n");
         }
         else
         {
-            printf("[%d] %s\n", p->len, p->str);
+            printf("[%d] %s\n", h->len, h->str);
         }
 
-        p = p->next;
+        h = h->next;
         i++;
     }
 
