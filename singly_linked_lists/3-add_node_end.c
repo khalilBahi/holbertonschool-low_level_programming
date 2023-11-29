@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * *add_node_end - function that prints all the elements of a list_t list
+ * *add_node_end - function that adds a new node at the end of a list_t list
  * @head:pointer to first node
  * @str:pointeur
- * Return: i element count
+ * Return: n element count
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
