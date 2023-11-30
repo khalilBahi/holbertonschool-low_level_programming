@@ -5,7 +5,7 @@
  * @n: number
  * @head: head address
  * Return: new node address
-*/
+ */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *nn = malloc(sizeof(dlistint_t));
@@ -24,4 +24,3 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	*head = nn;
 	return (nn);
 }
- 
