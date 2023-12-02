@@ -11,11 +11,18 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int i = 0;
 	dlistint_t *p = head;
 
-	if (index >= (sizeof(long int) * 16))
+	if (p == NULL)
+	{
 		return (NULL);
-	for (; i < index; i++)
+	}
+
+	for (i = 0; i < index; i++)
 	{
 		p = p->next;
+		if (p == NULL)
+		{
+			return (NULL);
+		}
 	}
 	return (p);
 }
