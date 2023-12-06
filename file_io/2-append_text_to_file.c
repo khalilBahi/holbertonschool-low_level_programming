@@ -3,7 +3,7 @@
  * append_text_to_file - function that append text to file
  * @filename: file path
  * @text_content: text content
- * Return:  (1)
+ * Return: (1)
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
